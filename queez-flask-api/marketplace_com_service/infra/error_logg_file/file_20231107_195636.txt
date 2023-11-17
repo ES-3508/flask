@@ -1,0 +1,36 @@
+ERROR:root:An error occurred in get_data_by_id: HierarchicalData.__init__() missing 2 required positional arguments: 'is_active' and 'category'
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2023 19:56:36] "GET /api/auth/quary/get_element_by_id/2 HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT hierarchical_data.id AS hierarchical_data_id, hierarchical_data.name AS hierarchical_data_name, hierarchical_data.level AS hierarchical_data_level, hierarchical_data.parent AS hierarchical_data_parent, hierarchical_data.is_active AS hierarchical_data_is_active, hierarchical_data.category AS hierarchical_data_category 
+FROM hierarchical_data 
+WHERE hierarchical_data.id = %s 
+ LIMIT %s
+INFO:sqlalchemy.engine.Engine:[cached since 121.3s ago] (2, 1)
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+ERROR:root:An error occurred in get_data_by_id: HierarchicalData.__init__() missing 2 required positional arguments: 'is_active' and 'category'
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2023 19:58:37] "GET /api/auth/quary/get_element_by_id/2 HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT hierarchical_data.id AS hierarchical_data_id, hierarchical_data.name AS hierarchical_data_name, hierarchical_data.level AS hierarchical_data_level, hierarchical_data.parent AS hierarchical_data_parent, hierarchical_data.is_active AS hierarchical_data_is_active, hierarchical_data.category AS hierarchical_data_category 
+FROM hierarchical_data 
+WHERE hierarchical_data.id = %s 
+ LIMIT %s
+INFO:sqlalchemy.engine.Engine:[cached since 139.7s ago] (2, 1)
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+ERROR:root:An error occurred in get_data_by_id: HierarchicalData.__init__() missing 2 required positional arguments: 'is_active' and 'category'
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2023 19:58:55] "GET /api/auth/quary/get_element_by_id/2 HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT hierarchical_data.id AS hierarchical_data_id, hierarchical_data.name AS hierarchical_data_name, hierarchical_data.level AS hierarchical_data_level, hierarchical_data.parent AS hierarchical_data_parent, hierarchical_data.is_active AS hierarchical_data_is_active, hierarchical_data.category AS hierarchical_data_category 
+FROM hierarchical_data 
+WHERE hierarchical_data.id = %s 
+ LIMIT %s
+INFO:sqlalchemy.engine.Engine:[cached since 193.3s ago] (2, 1)
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+ERROR:root:An error occurred in get_data_by_id: HierarchicalData.__init__() missing 2 required positional arguments: 'is_active' and 'category'
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2023 20:00:57] "GET /api/auth/quary/get_element_by_id/2 HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT hierarchical_data.id AS hierarchical_data_id, hierarchical_data.name AS hierarchical_data_name, hierarchical_data.level AS hierarchical_data_level, hierarchical_data.parent AS hierarchical_data_parent, hierarchical_data.is_active AS hierarchical_data_is_active, hierarchical_data.category AS hierarchical_data_category 
+FROM hierarchical_data 
+WHERE hierarchical_data.id = %s 
+ LIMIT %s
+INFO:sqlalchemy.engine.Engine:[cached since 271s ago] (2, 1)
+INFO:sqlalchemy.engine.Engine:ROLLBACK

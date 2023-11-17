@@ -1,0 +1,9 @@
+ERROR:root:An error occurred in authenticate: Username must be between 4 and 20 characters in length.
+INFO:werkzeug:127.0.0.1 - - [23/Oct/2023 23:50:26] "POST /api/auth/command/login HTTP/1.1" 200 -
+ERROR:root:An error occurred in authenticate: Password should be at least 8 characters long.
+INFO:werkzeug:127.0.0.1 - - [23/Oct/2023 23:52:50] "POST /api/auth/command/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Oct/2023 23:55:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Oct/2023 23:56:10] "[33mGET /api/auth/quary HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Oct/2023 23:57:34] "[33mGET /api/auth/quary HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Oct/2023 23:58:28] "[32mGET /swagger HTTP/1.1[0m" 308 -
+INFO:werkzeug:127.0.0.1 - - [23/Oct/2023 23:58:29] "GET /swagger/ HTTP/1.1" 200 -

@@ -1,0 +1,16 @@
+ERROR:root:An error occurred in login: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+ERROR:server:Exception on /api/auth/command/login [POST]
+Traceback (most recent call last):
+  File "d:\Seeamles\SeeamlesDevelopment\Python\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Seeamles\SeeamlesDevelopment\Python\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1487, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Seeamles\SeeamlesDevelopment\Python\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1506, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Seeamles\SeeamlesDevelopment\Python\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1837, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a bool.
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2023 20:57:12] "[35m[1mPOST /api/auth/command/login HTTP/1.1[0m" 500 -

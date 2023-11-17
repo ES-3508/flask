@@ -1,0 +1,28 @@
+ERROR:root:An error occurred in get_all_filter: 'FilterOrm' object has no attribute 'is_active'
+ERROR:server:Exception on /api/auth/quary/get_all [GET]
+Traceback (most recent call last):
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\marketplace_com_service\interfaces\features\user\landing_quary_routes.py", line 50, in get_all
+    response_object_filter = service_filter.get_all_filter()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\marketplace_com_service\application\features\landing\quarry\filter_query_service.py", line 37, in get_all_filter
+    filters = self.filter_Query_Service.get_all_filter()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\marketplace_com_service\application\features\landing\quarry\filter_query_service.py", line 40, in get_all_filter
+    for filter in filters:
+TypeError: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2023 19:37:41] "[35m[1mGET /api/auth/quary/get_all HTTP/1.1[0m" 500 -

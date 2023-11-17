@@ -1,0 +1,115 @@
+ERROR:root:An error occurred in get_all_data: Could not locate a bind configured on mapper Mapper[HierarchicalDataEntity(hierarchical_data)], SQL expression or this Session.
+ERROR:server:Exception on /api/auth/quary/get_all_hierarchical_data [GET]
+Traceback (most recent call last):
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\market_place\interfaces\features\user\auth_quary_routes.py", line 18, in get_all_hierarchical_data
+    return jsonify([data.__dict__ for data in all_data])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 09:03:07] "[35m[1mGET /api/auth/quary/get_all_hierarchical_data HTTP/1.1[0m" 500 -
+ERROR:root:An error occurred in get_all_data: Could not locate a bind configured on mapper Mapper[HierarchicalDataEntity(hierarchical_data)], SQL expression or this Session.
+ERROR:server:Exception on /api/auth/quary/get_all_hierarchical_data [GET]
+Traceback (most recent call last):
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\market_place\interfaces\features\user\auth_quary_routes.py", line 18, in get_all_hierarchical_data
+    return jsonify([data.__dict__ for data in all_data])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 09:03:19] "[35m[1mGET /api/auth/quary/get_all_hierarchical_data HTTP/1.1[0m" 500 -
+ERROR:root:An error occurred in get_all_data: Could not locate a bind configured on mapper Mapper[HierarchicalDataEntity(hierarchical_data)], SQL expression or this Session.
+ERROR:server:Exception on /api/auth/quary/get_all_hierarchical_data [GET]
+Traceback (most recent call last):
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\market_place\interfaces\features\user\auth_quary_routes.py", line 18, in get_all_hierarchical_data
+    return jsonify([data.__dict__ for data in all_data])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 09:03:32] "[35m[1mGET /api/auth/quary/get_all_hierarchical_data HTTP/1.1[0m" 500 -
+ERROR:root:An error occurred in get_all_data: Could not locate a bind configured on mapper Mapper[HierarchicalDataEntity(hierarchical_data)], SQL expression or this Session.
+ERROR:server:Exception on /api/auth/quary/get_all_hierarchical_data [GET]
+Traceback (most recent call last):
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\market_place\interfaces\features\user\auth_quary_routes.py", line 18, in get_all_hierarchical_data
+    return jsonify([data.__dict__ for data in all_data])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 09:05:40] "[35m[1mGET /api/auth/quary/get_all_hierarchical_data HTTP/1.1[0m" 500 -
+ERROR:root:An error occurred in get_all_data: Could not locate a bind configured on mapper Mapper[HierarchicalDataEntity(hierarchical_data)], SQL expression or this Session.
+ERROR:server:Exception on /api/auth/quary/get_all_hierarchical_data [GET]
+Traceback (most recent call last):
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\market_place\interfaces\features\user\auth_quary_routes.py", line 18, in get_all_hierarchical_data
+    return jsonify([data.__dict__ for data in all_data])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 09:06:18] "[35m[1mGET /api/auth/quary/get_all_hierarchical_data HTTP/1.1[0m" 500 -

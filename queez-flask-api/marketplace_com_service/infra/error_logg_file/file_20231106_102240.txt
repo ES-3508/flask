@@ -1,0 +1,24 @@
+ERROR:root:An error occurred in create_data: (MySQLdb.IntegrityError) (1062, "Duplicate entry '41' for key 'hierarchical_data.PRIMARY'")
+[SQL: INSERT INTO hierarchical_data (id, name, level, parent) VALUES (%s, %s, %s, %s)]
+[parameters: (41, 'Examplehh Category', 2, 0)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:22:40] "POST /api/auth/command/create_hierarchical_data HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:INSERT INTO hierarchical_data (id, name, level, parent) VALUES (%s, %s, %s, %s)
+INFO:sqlalchemy.engine.Engine:[cached since 13.14s ago] (42, 'Examplehh Category', 2, 0)
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:22:53] "POST /api/auth/command/create_hierarchical_data HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:INSERT INTO hierarchical_data (id, name, level, parent) VALUES (%s, %s, %s, %s)
+INFO:sqlalchemy.engine.Engine:[cached since 1538s ago] (42, 'Examplehh Category', 2, 0)
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+ERROR:root:An error occurred in create_data: (MySQLdb.IntegrityError) (1062, "Duplicate entry '42' for key 'hierarchical_data.PRIMARY'")
+[SQL: INSERT INTO hierarchical_data (id, name, level, parent) VALUES (%s, %s, %s, %s)]
+[parameters: (42, 'Examplehh Category', 2, 0)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:48:18] "POST /api/auth/command/create_hierarchical_data HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:INSERT INTO hierarchical_data (id, name, level, parent) VALUES (%s, %s, %s, %s)
+INFO:sqlalchemy.engine.Engine:[cached since 1548s ago] (22, 'Examplehh Category', 2, 0)
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:48:28] "POST /api/auth/command/create_hierarchical_data HTTP/1.1" 200 -

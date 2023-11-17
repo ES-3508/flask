@@ -1,0 +1,6 @@
+ERROR:root:An error occurred in authenticate: Password should contain at least one digit.
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2023 19:23:36] "POST /api/auth/command/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2023 09:28:37] "[33mGET /test HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2023 09:29:47] "OPTIONS /api/auth/command/login HTTP/1.1" 200 -
+ERROR:root:An error occurred in authenticate: Password should contain at least one digit.
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2023 09:29:48] "POST /api/auth/command/login HTTP/1.1" 200 -

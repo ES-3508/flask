@@ -1,0 +1,31 @@
+from ..application.features.landing.quarry.filter_query_service import FilterQueryService
+from ..application.features.landing.quarry.hierarchical_data_query_service import HierarchicalDataQueryService
+
+from ..infrastructure.quary.filter_quary_repository import FilterQueryRepository
+from ..infrastructure.quary.hierarchicaldata_quary_repository import HierarchicalDataQueryRepository
+
+from ..application.features.landing.command.filter_command_service import FilterCommandService
+from ..application.features.landing.command.hierarchicaldata_command_service import HierarchicalDataCommandService
+
+from ..infrastructure.command.filter_command_repository import FilterCommandRepository
+from ..infrastructure.command.hierarchicaldata_command_repository import HierarchicalDataCommandRepository
+
+from ..application.features.landing.quarry.filterandhierarchicaldata_query_service import FilterandHierarchicaldataQueryService
+
+# Create instances of the required dependencies
+filter_query_repository = FilterQueryRepository()
+hierarchicaldata_query_repository = HierarchicalDataQueryRepository()
+
+filter_command_repository = FilterCommandRepository()
+hierarchicalData_command_repository = HierarchicalDataCommandRepository()
+
+filter_Command_Service = FilterCommandService(filter_command_repository)
+hierarchicalData_command_Service = HierarchicalDataCommandService(hierarchicalData_command_repository)
+
+filter_query_service = FilterQueryService(filter_query_repository)
+hierarchicaldata_query_service = HierarchicalDataQueryService(hierarchicaldata_query_repository)
+filterandhierarchicaldata_query_service = FilterandHierarchicaldataQueryService(filter_query_repository,hierarchicaldata_query_repository)
+
+
+
+

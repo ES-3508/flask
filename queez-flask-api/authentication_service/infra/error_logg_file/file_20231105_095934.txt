@@ -1,0 +1,203 @@
+ERROR:root:An error occurred in get_query_by_code: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'queez.sys_query_string' doesn't exist
+[SQL: SELECT sql_string,display_field,query_filter,filter_para FROM sys_query_string WHERE query_code = %(query_code)s ]
+[parameters: {'query_code': 'get_user_by_username'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:root:An error occurred in fetch_run_sql_select_query_string: 'bool' object has no attribute 'sql_string'
+ERROR:root:An error occurred in authenticate: No user found with this username
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 10:01:58] "POST /api/auth/command/login HTTP/1.1" 200 -
+ERROR:server:Exception on /api/auth/command/saveuser [POST]
+Traceback (most recent call last):
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\authentication_service\interfaces\features\user\auth_command_routes.py", line 45, in create_euser
+    result =user_create_command_service.create_user_async(user_json)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\authentication_service\application\features\user\command\user_create_command_service.py", line 9, in create_user_async
+    result=self.user_command_repository.create_user_async(user_json)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\authentication_service\infrastructure\command\user_command_repository.py", line 17, in create_user_async
+    MongoDRunner.create_user_async('user_collection',user_json)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'MongoDRunner' has no attribute 'create_user_async'
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 10:04:39] "[35m[1mPOST /api/auth/command/saveuser HTTP/1.1[0m" 500 -
+ERROR:server:Exception on /api/auth/command/saveuser [POST]
+Traceback (most recent call last):
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\authentication_service\interfaces\features\user\auth_command_routes.py", line 45, in create_euser
+    result =user_create_command_service.create_user_async(user_json)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\authentication_service\application\features\user\command\user_create_command_service.py", line 9, in create_user_async
+    result=self.user_command_repository.create_user_async(user_json)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\authentication_service\infrastructure\command\user_command_repository.py", line 17, in create_user_async
+    MongoDRunner.create_user_async('user_collection',user_json)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'MongoDRunner' has no attribute 'create_user_async'
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 10:06:55] "[35m[1mPOST /api/auth/command/saveuser HTTP/1.1[0m" 500 -
+ERROR:server:Exception on /api/auth/command/saveuser [POST]
+Traceback (most recent call last):
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\authentication_service\interfaces\features\user\auth_command_routes.py", line 45, in create_euser
+    result =user_create_command_service.create_user_async(user_json)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\authentication_service\application\features\user\command\user_create_command_service.py", line 9, in create_user_async
+    result=self.user_command_repository.create_user_async(user_json)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\authentication_service\infrastructure\command\user_command_repository.py", line 17, in create_user_async
+    MongoDRunner.create_user_async('user_collection',user_json)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'MongoDRunner' has no attribute 'create_user_async'
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 11:03:04] "[35m[1mPOST /api/auth/command/saveuser HTTP/1.1[0m" 500 -
+ERROR:server:Exception on /api/auth/command/saveuser [POST]
+Traceback (most recent call last):
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\authentication_service\interfaces\features\user\auth_command_routes.py", line 45, in create_euser
+    result =user_create_command_service.create_user_async(user_json)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\authentication_service\application\features\user\command\user_create_command_service.py", line 9, in create_user_async
+    result=self.user_command_repository.create_user_async(user_json)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\authentication_service\infrastructure\command\user_command_repository.py", line 17, in create_user_async
+    MongoDRunner.create_user_async('user_collection',user_json)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'MongoDRunner' has no attribute 'create_user_async'
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 11:04:47] "[35m[1mPOST /api/auth/command/saveuser HTTP/1.1[0m" 500 -
+ERROR:server:Exception on /api/auth/command/saveuser [POST]
+Traceback (most recent call last):
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\authentication_service\interfaces\features\user\auth_command_routes.py", line 45, in create_euser
+    result =user_create_command_service.create_user_async(user_json)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\authentication_service\application\features\user\command\user_create_command_service.py", line 9, in create_user_async
+    result=self.user_command_repository.create_user_async(user_json)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\authentication_service\infrastructure\command\user_command_repository.py", line 17, in create_user_async
+    MongoDRunner.create_user_async('user_collection',user_json)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'MongoDRunner' has no attribute 'create_user_async'
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 11:05:18] "[35m[1mPOST /api/auth/command/saveuser HTTP/1.1[0m" 500 -
+ERROR:server:Exception on /api/auth/command/saveuser [POST]
+Traceback (most recent call last):
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\authentication_service\interfaces\features\user\auth_command_routes.py", line 45, in create_euser
+    result =user_create_command_service.create_user_async(user_json)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\authentication_service\application\features\user\command\user_create_command_service.py", line 9, in create_user_async
+    result=self.user_command_repository.create_user_async(user_json)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\authentication_service\infrastructure\command\user_command_repository.py", line 17, in create_user_async
+    MongoDRunner.create_user_async('user_collection',user_json)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'MongoDRunner' has no attribute 'create_user_async'
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 11:07:25] "[35m[1mPOST /api/auth/command/saveuser HTTP/1.1[0m" 500 -
+ERROR:server:Exception on /api/auth/command/saveuser [POST]
+Traceback (most recent call last):
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\authentication_service\interfaces\features\user\auth_command_routes.py", line 45, in create_euser
+    result =user_create_command_service.create_user_async(user_json)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\authentication_service\application\features\user\command\user_create_command_service.py", line 9, in create_user_async
+    result=self.user_command_repository.create_user_async(user_json)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\queez-flask-api\authentication_service\infrastructure\command\user_command_repository.py", line 17, in create_user_async
+    MongoDRunner.create_user_async('user_collection',user_json)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'MongoDRunner' has no attribute 'create_user_async'
+INFO:werkzeug:127.0.0.1 - - [05/Nov/2023 11:11:04] "[35m[1mPOST /api/auth/command/saveuser HTTP/1.1[0m" 500 -
