@@ -1,0 +1,11 @@
+ERROR:root:An error occurred in verify_token: Invalid header string: 'utf-8' codec can't decode byte 0xa2 in position 22: invalid start byte
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2023 22:17:24] "[31m[1mGET /api/landing/quary/get_all_hierarchical_data HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2023 22:40:22] "POST /api/auth/command/login HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT hierarchical_data.id AS hierarchical_data_id, hierarchical_data.name AS hierarchical_data_name, hierarchical_data.level AS hierarchical_data_level, hierarchical_data.parent AS hierarchical_data_parent, hierarchical_data.is_active AS hierarchical_data_is_active, hierarchical_data.category AS hierarchical_data_category 
+FROM hierarchical_data
+INFO:sqlalchemy.engine.Engine:[cached since 1433s ago] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2023 22:41:07] "GET /api/landing/quary/get_all_hierarchical_data HTTP/1.1" 200 -
+ERROR:root:An error occurred in verify_token: Invalid header string: 'utf-8' codec can't decode byte 0xcb in position 12: invalid continuation byte
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2023 22:41:15] "[31m[1mGET /api/landing/quary/get_all_hierarchical_data HTTP/1.1[0m" 401 -

@@ -1,0 +1,88 @@
+ERROR:root:An error occurred in create_hierarchical_data_endpoint: Object of type set is not JSON serializable
+ERROR:server:Exception on /api/auth/command/create_hierarchical_data [POST]
+Traceback (most recent call last):
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1487, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1506, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1837, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a bool.
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:17:14] "[35m[1mPOST /api/auth/command/create_hierarchical_data HTTP/1.1[0m" 500 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:INSERT INTO hierarchical_data (id, name, level, parent) VALUES (%s, %s, %s, %s)
+INFO:sqlalchemy.engine.Engine:[cached since 27.13s ago] (40, 'Examplehh Category', 2, 0)
+INFO:sqlalchemy.engine.Engine:COMMIT
+ERROR:root:An error occurred in create_hierarchical_data_endpoint: Object of type set is not JSON serializable
+ERROR:server:Exception on /api/auth/command/create_hierarchical_data [POST]
+Traceback (most recent call last):
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1487, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1506, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1837, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a bool.
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:17:41] "[35m[1mPOST /api/auth/command/create_hierarchical_data HTTP/1.1[0m" 500 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:INSERT INTO hierarchical_data (id, name, level, parent) VALUES (%s, %s, %s, %s)
+INFO:sqlalchemy.engine.Engine:[cached since 70.52s ago] (40, 'Examplehh Category', 2, 0)
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+ERROR:root:An error occurred in create_data: (MySQLdb.IntegrityError) (1062, "Duplicate entry '40' for key 'hierarchical_data.PRIMARY'")
+[SQL: INSERT INTO hierarchical_data (id, name, level, parent) VALUES (%s, %s, %s, %s)]
+[parameters: (40, 'Examplehh Category', 2, 0)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+ERROR:root:An error occurred in create_hierarchical_data_endpoint: Object of type set is not JSON serializable
+ERROR:server:Exception on /api/auth/command/create_hierarchical_data [POST]
+Traceback (most recent call last):
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1487, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1506, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1837, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a bool.
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:18:43] "[35m[1mPOST /api/auth/command/create_hierarchical_data HTTP/1.1[0m" 500 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:INSERT INTO hierarchical_data (id, name, level, parent) VALUES (%s, %s, %s, %s)
+INFO:sqlalchemy.engine.Engine:[cached since 135.4s ago] (40, 'Examplehh Category', 2, 0)
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+ERROR:root:An error occurred in create_data: (MySQLdb.IntegrityError) (1062, "Duplicate entry '40' for key 'hierarchical_data.PRIMARY'")
+[SQL: INSERT INTO hierarchical_data (id, name, level, parent) VALUES (%s, %s, %s, %s)]
+[parameters: (40, 'Examplehh Category', 2, 0)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+ERROR:root:An error occurred in create_hierarchical_data_endpoint: Object of type set is not JSON serializable
+ERROR:server:Exception on /api/auth/command/create_hierarchical_data [POST]
+Traceback (most recent call last):
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1487, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1506, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1837, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a bool.
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:20:01] "[35m[1mPOST /api/auth/command/create_hierarchical_data HTTP/1.1[0m" 500 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:INSERT INTO hierarchical_data (id, name, level, parent) VALUES (%s, %s, %s, %s)
+INFO:sqlalchemy.engine.Engine:[cached since 211.6s ago] (41, 'Examplehh Category', 2, 0)
+INFO:sqlalchemy.engine.Engine:COMMIT

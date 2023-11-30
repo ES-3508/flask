@@ -1,0 +1,32 @@
+ERROR:root:An error occurred in create_data: HierarchicalDataRepository_command.create_data() missing 1 required positional argument: 'data'
+ERROR:server:Exception on /api/auth/command/create_hierarchical_data [POST]
+Traceback (most recent call last):
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1487, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1506, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1801, in make_response
+    raise TypeError(
+TypeError: The view function for 'auth_command_routes.wrapper' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 01:32:11] "[35m[1mPOST /api/auth/command/create_hierarchical_data HTTP/1.1[0m" 500 -
+ERROR:root:An error occurred in create_data: HierarchicalDataRepository_command.create_data() missing 1 required positional argument: 'data'
+ERROR:server:Exception on /api/auth/command/create_hierarchical_data [POST]
+Traceback (most recent call last):
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1487, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1506, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1801, in make_response
+    raise TypeError(
+TypeError: The view function for 'auth_command_routes.wrapper' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 01:33:52] "[35m[1mPOST /api/auth/command/create_hierarchical_data HTTP/1.1[0m" 500 -

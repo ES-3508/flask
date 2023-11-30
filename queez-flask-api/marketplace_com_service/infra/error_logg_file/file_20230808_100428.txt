@@ -1,0 +1,19 @@
+ERROR:root:An error occurred in authenticate: Password should contain at least one digit.
+ERROR:root:An error occurred in login: ResponseObject.add_payload() missing 1 required positional argument: 'payload'
+ERROR:server:Exception on /api/auth/command/login [POST]
+Traceback (most recent call last):
+  File "d:\Seeamles\SeeamlesDevelopment\Python\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Seeamles\SeeamlesDevelopment\Python\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1487, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Seeamles\SeeamlesDevelopment\Python\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1506, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Seeamles\SeeamlesDevelopment\Python\QueezFlask\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1837, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a bool.
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2023 10:06:53] "[35m[1mPOST /api/auth/command/login HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2023 10:06:59] "OPTIONS /api/auth/command/login HTTP/1.1" 200 -
+ERROR:root:An error occurred in authenticate: Password should contain at least one digit.

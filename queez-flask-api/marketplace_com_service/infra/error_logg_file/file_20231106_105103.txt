@@ -1,0 +1,25 @@
+ERROR:root:An error occurred in create_data: (MySQLdb.IntegrityError) (1062, "Duplicate entry '22' for key 'hierarchical_data.PRIMARY'")
+[SQL: INSERT INTO hierarchical_data (id, name, level, parent) VALUES (%s, %s, %s, %s)]
+[parameters: (22, 'Examplehh Category', 2, 0)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:51:03] "POST /api/auth/command/create_hierarchical_data HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT hierarchical_data.id AS hierarchical_data_id, hierarchical_data.name AS hierarchical_data_name, hierarchical_data.level AS hierarchical_data_level, hierarchical_data.parent AS hierarchical_data_parent 
+FROM hierarchical_data
+INFO:sqlalchemy.engine.Engine:[generated in 0.00224s] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:51:32] "GET /api/auth/quary/get_all_hierarchical_data HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT hierarchical_data.id AS hierarchical_data_id, hierarchical_data.name AS hierarchical_data_name, hierarchical_data.level AS hierarchical_data_level, hierarchical_data.parent AS hierarchical_data_parent 
+FROM hierarchical_data 
+WHERE hierarchical_data.id = %s 
+ LIMIT %s
+INFO:sqlalchemy.engine.Engine:[generated in 0.00158s] (2, 1)
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:51:36] "GET /api/auth/quary/get_element_by_id/2 HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT filters.code AS filters_code, filters.name AS filters_name, filters.level AS filters_level, filters.parent AS filters_parent, filters.`Type` AS `filters_Type` 
+FROM filters
+INFO:sqlalchemy.engine.Engine:[generated in 0.00095s] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:51:38] "GET /api/auth/quary/get_all_filter_data HTTP/1.1" 200 -

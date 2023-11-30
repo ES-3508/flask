@@ -1,0 +1,3 @@
+ERROR:root:An error occurred in authenticate: Password should contain at least one uppercase letter.
+INFO:werkzeug:127.0.0.1 - - [15/Nov/2023 11:00:42] "POST /api/auth/command/login HTTP/1.1" 200 -
+ERROR:root:An error occurred in authenticate: Password should contain at least one uppercase letter.

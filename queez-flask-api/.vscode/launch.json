@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/authentication_service/server.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "run"
+            ],
+            "env": {
+                "FLASK_APP": "server",  // Adjust if your Flask app variable is named differently
+                "FLASK_ENV": "development"
+            },
+            "cwd": "${workspaceFolder}/authentication_service",
+            "stopOnEntry": false
+        }
+    ]
+}

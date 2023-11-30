@@ -1,0 +1,8 @@
+ERROR:root:An error occurred in create_filter: 'dict' object has no attribute 'code'
+ERROR:root:An error occurred in create_filter: 'bool' object has no attribute 'id'
+ERROR:root:An error occurred in create_filter: 'bool' object has no attribute 'id'
+INFO:werkzeug:127.0.0.1 - - [10/Nov/2023 00:54:44] "POST /api/landing/command/create_filter_data HTTP/1.1" 200 -
+ERROR:root:An error occurred in create_filter: 'dict' object has no attribute 'code'
+ERROR:root:An error occurred in create_filter: 'bool' object has no attribute 'id'
+ERROR:root:An error occurred in create_filter: 'bool' object has no attribute 'id'
+INFO:werkzeug:127.0.0.1 - - [10/Nov/2023 00:56:01] "POST /api/landing/command/create_filter_data HTTP/1.1" 200 -

@@ -1,0 +1,14 @@
+ERROR:root:An error occurred in get_query_by_code: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'queez.sys_query_string' doesn't exist
+[SQL: SELECT sql_string,display_field,query_filter,filter_para FROM sys_query_string WHERE query_code = %(query_code)s ]
+[parameters: {'query_code': 'get_user_by_username'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:root:An error occurred in fetch_run_sql_select_query_string: 'bool' object has no attribute 'sql_string'
+ERROR:root:An error occurred in authenticate: No user found with this username
+INFO:werkzeug:127.0.0.1 - - [03/Nov/2023 19:44:34] "POST /api/auth/command/login HTTP/1.1" 200 -
+ERROR:root:An error occurred in get_query_by_code: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'queez.sys_query_string' doesn't exist
+[SQL: SELECT sql_string,display_field,query_filter,filter_para FROM sys_query_string WHERE query_code = %(query_code)s ]
+[parameters: {'query_code': 'get_user_by_username'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:root:An error occurred in fetch_run_sql_select_query_string: 'bool' object has no attribute 'sql_string'
+ERROR:root:An error occurred in authenticate: No user found with this username
+INFO:werkzeug:127.0.0.1 - - [03/Nov/2023 19:49:06] "POST /api/auth/command/login HTTP/1.1" 200 -

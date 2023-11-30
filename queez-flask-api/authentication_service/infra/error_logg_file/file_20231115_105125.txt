@@ -1,0 +1,2 @@
+ERROR:root:An error occurred in authenticate: name 'user' is not defined
+INFO:werkzeug:127.0.0.1 - - [15/Nov/2023 10:51:28] "POST /api/auth/command/login HTTP/1.1" 200 -

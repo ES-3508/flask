@@ -1,0 +1,18 @@
+ERROR:root:An error occurred in get_query_by_code: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'queez.sys_query_string' doesn't exist
+[SQL: SELECT sql_string,display_field,query_filter,filter_para FROM sys_query_string WHERE query_code = %(query_code)s ]
+[parameters: {'query_code': 'get_user_by_username'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:root:An error occurred in fetch_run_sql_select_query_string: 'bool' object has no attribute 'sql_string'
+ERROR:root:An error occurred in authenticate: No user found with this username
+INFO:werkzeug:127.0.0.1 - - [09/Nov/2023 14:40:57] "POST /api/auth/command/login HTTP/1.1" 200 -
+ERROR:root:An error occurred in verify_token: Not enough segments
+INFO:werkzeug:127.0.0.1 - - [09/Nov/2023 14:41:00] "[31m[1mGET /api/auth/command/protected HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [09/Nov/2023 14:47:06] "[32mGET /swagger HTTP/1.1[0m" 308 -
+INFO:werkzeug:127.0.0.1 - - [09/Nov/2023 14:47:10] "GET /swagger/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Nov/2023 14:47:10] "GET /swagger/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Nov/2023 14:47:11] "GET /swagger/swagger-ui.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Nov/2023 14:47:12] "GET /swagger/swagger-ui-bundle.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Nov/2023 14:47:12] "GET /swagger/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Nov/2023 14:47:12] "GET /swagger/favicon-32x32.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Nov/2023 14:47:13] "GET /static/swagger.json HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Nov/2023 14:47:38] "[36mGET /swagger/favicon-32x32.png HTTP/1.1[0m" 304 -

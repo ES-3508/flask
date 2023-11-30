@@ -1,0 +1,2 @@
+ERROR:root:An error occurred in authenticate: Password should contain at least one digit.
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2023 19:21:17] "POST /api/auth/command/login HTTP/1.1" 200 -
