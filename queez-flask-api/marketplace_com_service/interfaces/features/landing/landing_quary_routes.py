@@ -18,7 +18,7 @@ landing_quary_routes = Blueprint('landing_quary_routes', __name__)
 
 
 @landing_quary_routes.route('/get_all_hierarchical_data', methods=['GET'])
-@token_required
+# @token_required
 def get_all_hierarchical_data():
     service = HierarchicalDataQueryService(hierarchicaldata_query_service)
     response_object = service.get_all_data()

@@ -1,0 +1,49 @@
+ERROR:root:An error occurred in get_all_advertisements: Parent instance <HeaderTable at 0x2a41141d450> is not bound to a Session; lazy load operation of attribute 'detail' cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+ERROR:root:An error occurred in get_all_advertisements: 'bool' object is not iterable
+ERROR:root:An error occurred in get_all_advertisements: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [29/Nov/2023 09:37:05] "GET /api/advertisement/quary/get_all_advertisements HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT hierarchical_data.id AS hierarchical_data_id, hierarchical_data.name AS hierarchical_data_name, hierarchical_data.level AS hierarchical_data_level, hierarchical_data.parent AS hierarchical_data_parent, hierarchical_data.is_active AS hierarchical_data_is_active, hierarchical_data.category AS hierarchical_data_category 
+FROM hierarchical_data
+INFO:sqlalchemy.engine.Engine:[generated in 0.00249s] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:werkzeug:127.0.0.1 - - [29/Nov/2023 09:37:25] "GET /api/landing/quary/get_all_hierarchical_data HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT hierarchical_data.id AS hierarchical_data_id, hierarchical_data.name AS hierarchical_data_name, hierarchical_data.level AS hierarchical_data_level, hierarchical_data.parent AS hierarchical_data_parent, hierarchical_data.is_active AS hierarchical_data_is_active, hierarchical_data.category AS hierarchical_data_category 
+FROM hierarchical_data 
+WHERE hierarchical_data.id = %s 
+ LIMIT %s
+INFO:sqlalchemy.engine.Engine:[generated in 0.00186s] (2, 1)
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:werkzeug:127.0.0.1 - - [29/Nov/2023 09:37:46] "GET /api/landing/quary/get_element_by_id/2 HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT hierarchical_data.id AS hierarchical_data_id, hierarchical_data.name AS hierarchical_data_name, hierarchical_data.level AS hierarchical_data_level, hierarchical_data.parent AS hierarchical_data_parent, hierarchical_data.is_active AS hierarchical_data_is_active, hierarchical_data.category AS hierarchical_data_category 
+FROM hierarchical_data 
+WHERE hierarchical_data.id = %s 
+ LIMIT %s
+INFO:sqlalchemy.engine.Engine:[cached since 29.91s ago] (1, 1)
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:werkzeug:127.0.0.1 - - [29/Nov/2023 09:38:16] "GET /api/landing/quary/get_element_by_id/1 HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT header_table.id AS header_table_id, header_table.publisher_id AS header_table_publisher_id, header_table.time_period AS header_table_time_period, header_table.is_active AS header_table_is_active, header_table.x_coordinate AS header_table_x_coordinate, header_table.y_coordinate AS header_table_y_coordinate 
+FROM header_table
+INFO:sqlalchemy.engine.Engine:[cached since 290.2s ago] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+ERROR:root:An error occurred in get_all_advertisements: Parent instance <HeaderTable at 0x2a411456f10> is not bound to a Session; lazy load operation of attribute 'detail' cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+ERROR:root:An error occurred in get_all_advertisements: 'bool' object is not iterable
+ERROR:root:An error occurred in get_all_advertisements: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [29/Nov/2023 09:42:30] "GET /api/advertisement/quary/get_all_advertisements HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT header_table.id AS header_table_id, header_table.publisher_id AS header_table_publisher_id, header_table.time_period AS header_table_time_period, header_table.is_active AS header_table_is_active, header_table.x_coordinate AS header_table_x_coordinate, header_table.y_coordinate AS header_table_y_coordinate 
+FROM header_table
+INFO:sqlalchemy.engine.Engine:[cached since 338.5s ago] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+ERROR:root:An error occurred in get_all_advertisements: Parent instance <HeaderTable at 0x2a41146b210> is not bound to a Session; lazy load operation of attribute 'detail' cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+ERROR:root:An error occurred in get_all_advertisements: 'bool' object is not iterable
+ERROR:root:An error occurred in get_all_advertisements: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [29/Nov/2023 09:42:43] "GET /api/advertisement/quary/get_all_advertisements HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT header_table.id AS header_table_id, header_table.publisher_id AS header_table_publisher_id, header_table.time_period AS header_table_time_period, header_table.is_active AS header_table_is_active, header_table.x_coordinate AS header_table_x_coordinate, header_table.y_coordinate AS header_table_y_coordinate 
+FROM header_table
+INFO:sqlalchemy.engine.Engine:[cached since 380.8s ago] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK

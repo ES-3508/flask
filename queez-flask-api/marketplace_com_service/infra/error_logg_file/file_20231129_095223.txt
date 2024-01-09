@@ -1,0 +1,9 @@
+ERROR:root:An error occurred in get_all_advertisements: Advertisement.__init__() missing 6 required positional arguments: 'add_id', 'filter_id', 'filtercategory_id', 'value', 'image_url', and 'thumbnail_photo'
+ERROR:root:An error occurred in get_all_advertisements: 'bool' object is not iterable
+ERROR:root:An error occurred in get_all_advertisements: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [29/Nov/2023 09:52:23] "GET /api/advertisement/quary/get_all_advertisements HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT header_table.id AS header_table_id, header_table.publisher_id AS header_table_publisher_id, header_table.time_period AS header_table_time_period, header_table.is_active AS header_table_is_active, header_table.x_coordinate AS header_table_x_coordinate, header_table.y_coordinate AS header_table_y_coordinate 
+FROM header_table
+INFO:sqlalchemy.engine.Engine:[cached since 22.44s ago] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK

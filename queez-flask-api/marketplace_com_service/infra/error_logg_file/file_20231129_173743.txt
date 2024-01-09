@@ -1,0 +1,7 @@
+ERROR:root:An error occurred in get_all_advertisements: AdvertisementResponseObject() takes no arguments
+ERROR:root:An error occurred in get_all_advertisements: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [29/Nov/2023 17:37:51] "GET /api/advertisement/quary/get_all_advertisements HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:SELECT header_table.publisher_id AS header_table_publisher_id, header_table.time_period AS header_table_time_period, header_table.is_active AS header_table_is_active, header_table.x_coordinate AS header_table_x_coordinate, header_table.y_coordinate AS header_table_y_coordinate, detail_table.add_id AS detail_table_add_id, detail_table.filter_id AS detail_table_filter_id, detail_table.filtercategory_id AS detail_table_filtercategory_id, detail_table.value AS detail_table_value, image_table.image_url AS image_table_image_url, image_table.thumbnail_photo AS image_table_thumbnail_photo 
+FROM header_table INNER JOIN detail_table ON header_table.id = detail_table.add_id INNER JOIN image_table ON header_table.id = image_table.id
+INFO:sqlalchemy.engine.Engine:[cached since 57.96s ago] ()
+ERROR:root:An error occurred in get_all_advertisements: AdvertisementResponseObject() takes no arguments

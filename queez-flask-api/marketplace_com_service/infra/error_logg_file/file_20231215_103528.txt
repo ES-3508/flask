@@ -1,0 +1,2 @@
+ERROR:root:An error occurred in get_advertisement_by_id: When initializing mapper Mapper[AdvertisementDetails_Orm(advertisement_details)], expression 'AdvertisementHeader' failed to locate a name ('AdvertisementHeader'). If this is a class name, consider adding this relationship() to the <class 'marketplace_com_service.infrastructure.orm_mapper.add_detail_mapper.AdvertisementDetails_Orm'> class after both dependent classes have been defined.
+INFO:werkzeug:127.0.0.1 - - [15/Dec/2023 10:35:28] "GET /api/advertisement/quary/get_advertisement_by_id/1 HTTP/1.1" 200 -

@@ -1,0 +1,5 @@
+ERROR:root:An error occurred in create_advertisement: (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`abcc`.`advertisement_header`, CONSTRAINT `advertisement_header_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `customer` (`customer_id`))')
+[SQL: INSERT INTO advertisement_header (publisher_id, time_period, is_active, coordinates, wf_state, date, user_id, package_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (1, 30, 1, 40, 5, '2023/12/31', 2, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:werkzeug:127.0.0.1 - - [18/Dec/2023 09:01:02] "POST /api/advertisement/command/create_advertisement HTTP/1.1" 200 -

@@ -1,0 +1,2 @@
+ERROR:root:An error occurred in get_all_advertisements: 'ResponseObject' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [29/Nov/2023 09:34:52] "GET /api/advertisement/quary/get_all_advertisements HTTP/1.1" 200 -

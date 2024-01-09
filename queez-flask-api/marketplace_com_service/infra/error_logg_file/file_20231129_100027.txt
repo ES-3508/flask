@@ -1,0 +1,7 @@
+ERROR:root:An error occurred in get_all_advertisements: 'InstrumentedList' object has no attribute 'add_id'
+ERROR:root:An error occurred in get_all_advertisements: 'bool' object is not iterable
+ERROR:root:An error occurred in get_all_advertisements: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [29/Nov/2023 10:00:27] "GET /api/advertisement/quary/get_all_advertisements HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:SELECT header_table.id AS header_table_id, header_table.publisher_id AS header_table_publisher_id, header_table.time_period AS header_table_time_period, header_table.is_active AS header_table_is_active, header_table.x_coordinate AS header_table_x_coordinate, header_table.y_coordinate AS header_table_y_coordinate 
+FROM header_table
+INFO:sqlalchemy.engine.Engine:[cached since 41.91s ago] ()

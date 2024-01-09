@@ -11,7 +11,12 @@ from marketplace_com_service.infra.error_handling_middleware import ErrorHandlin
 from authentication_service.interfaces.features.user.auth_command_routes import auth_command_routes
 from authentication_service.interfaces.features.user.auth_quary_routes import auth_quary_routes
 from authentication_service.infra.error_handling_middleware import ErrorHandlingMiddleware
+
+from marketplace_com_service.interfaces.features.advertisement.advertisement_command_routes import advertisement_command_routes
+from marketplace_com_service.interfaces.features.advertisement.advertisement_quary_routes import advertisement_query_routes
 # from authentication_service.interfaces.features.user.auth_command_routes import auth_command_routes
+from marketplace_com_service.interfaces.features.customer_portal.customer_portal_command_routes import customerportal_command_routes
+from marketplace_com_service.interfaces.features.customer_portal.customer_portal_quary_routes import customerportal_query_routes
 
 load_dotenv('.env')
 
@@ -23,7 +28,16 @@ SWAGGERUI_BLUEPRINT = get_swaggerui_blueprint(
     SWAGGER_URL,
     API_URL,
     config={
-        'app_name': "Seans-Python-Flask-REST-Boilerplate"
+        'app_name': "Seans-Python-Flask-REST-Boilerplate",
+        'supportedSubmitMethods': ['get', 'post', 'put', 'delete'],
+        'securityDefinitions': {
+            'BearerAuth': {
+                'type': 'apiKey',
+                'in': 'header',
+                'name': 'Authorization'
+            }
+        },
+        'security': [{'BearerAuth': []}]
     }
 )
 app.register_blueprint(SWAGGERUI_BLUEPRINT, url_prefix=SWAGGER_URL)
@@ -44,9 +58,14 @@ app.register_blueprint(auth_quary_routes, url_prefix='/api/auth/quary')
 app.register_blueprint(landing_quary_routes, url_prefix='/api/landing/quary')
 app.register_blueprint(landing_command_routes, url_prefix='/api/landing/command')
 
+# Registering advertisement routes
+app.register_blueprint(advertisement_query_routes, url_prefix='/api/advertisement/quary')
+app.register_blueprint(advertisement_command_routes, url_prefix='/api/advertisement/command')
 
+app.register_blueprint(customerportal_query_routes, url_prefix='/api/customerportal/quary')
+app.register_blueprint(customerportal_command_routes, url_prefix='/api/customerportal/command')
 
 if __name__ == '__main__':
-    app.run(port= 5001)
+    app.run()
     
     

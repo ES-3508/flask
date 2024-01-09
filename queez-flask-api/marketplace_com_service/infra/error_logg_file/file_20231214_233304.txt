@@ -1,0 +1,2 @@
+ERROR:root:An error occurred in get_advertisement_by_id: When initializing mapper Mapper[HierarchicalDataOrm(hierarchical_data)], expression 'DetailTable' failed to locate a name ('DetailTable'). If this is a class name, consider adding this relationship() to the <class 'marketplace_com_service.infrastructure.orm_mapper.hierarchicaldata_mapper.HierarchicalDataOrm'> class after both dependent classes have been defined.
+INFO:werkzeug:127.0.0.1 - - [14/Dec/2023 23:33:06] "GET /api/advertisement/quary/get_advertisement_by_id/2 HTTP/1.1" 200 -

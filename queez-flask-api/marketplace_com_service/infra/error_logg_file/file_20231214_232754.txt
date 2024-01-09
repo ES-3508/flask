@@ -1,0 +1,6 @@
+ERROR:root:An error occurred in get_advertisement_by_id: Invalid ID format
+INFO:werkzeug:127.0.0.1 - - [14/Dec/2023 23:27:54] "GET /api/advertisement/quary/get_advertisement_by_id/1 HTTP/1.1" 200 -
+ERROR:root:An error occurred in get_advertisement_by_id: Invalid ID format
+INFO:werkzeug:127.0.0.1 - - [14/Dec/2023 23:28:54] "GET /api/advertisement/quary/get_advertisement_by_id/1 HTTP/1.1" 200 -
+ERROR:root:An error occurred in get_advertisement_by_id: Invalid ID format
+INFO:werkzeug:127.0.0.1 - - [14/Dec/2023 23:30:43] "GET /api/advertisement/quary/get_advertisement_by_id/1 HTTP/1.1" 200 -

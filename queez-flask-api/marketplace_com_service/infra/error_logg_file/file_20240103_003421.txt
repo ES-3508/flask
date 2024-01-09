@@ -1,0 +1,3 @@
+ERROR:root:An error occurred in get_advertisement_by_id: When initializing mapper Mapper[CustomerPinnedItems(customer_pinned_items)], expression 'Customer' failed to locate a name ('Customer'). If this is a class name, consider adding this relationship() to the <class 'marketplace_com_service.infrastructure.orm_mapper.pinned_items_mapper.CustomerPinnedItems'> class after both dependent classes have been defined.
+ERROR:root:An error occurred in get_advertisement_by_id: cannot access local variable 'advertisement_response_object' where it is not associated with a value
+INFO:werkzeug:127.0.0.1 - - [03/Jan/2024 00:34:21] "GET /api/advertisement/quary/get_advertisement_by_id/1 HTTP/1.1" 200 -

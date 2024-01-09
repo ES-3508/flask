@@ -1,0 +1,3 @@
+ERROR:root:An error occurred in get_all_advertisements: 'Table' object has no attribute 'HeaderTable'
+ERROR:root:An error occurred in get_all_advertisements: 'bool' object is not iterable
+ERROR:root:An error occurred in get_all_advertisements: 'bool' object is not iterable

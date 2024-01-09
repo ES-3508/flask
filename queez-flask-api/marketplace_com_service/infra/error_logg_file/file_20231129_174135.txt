@@ -1,0 +1,2 @@
+ERROR:root:An error occurred in get_all_advertisements: AdvertisementQueryService.get_all_advertisements() missing 1 required positional argument: 'self'
+INFO:werkzeug:127.0.0.1 - - [29/Nov/2023 17:41:35] "GET /api/advertisement/quary/get_all_advertisements HTTP/1.1" 200 -

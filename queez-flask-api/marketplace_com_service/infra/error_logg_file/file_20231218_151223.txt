@@ -1,0 +1,2 @@
+ERROR:root:An error occurred in get_advertisement_by_id: 'ResponseObject' object has no attribute 'to_dict'
+INFO:werkzeug:127.0.0.1 - - [18/Dec/2023 15:12:23] "GET /api/advertisement/quary/get_advertisement_by_id/1 HTTP/1.1" 200 -

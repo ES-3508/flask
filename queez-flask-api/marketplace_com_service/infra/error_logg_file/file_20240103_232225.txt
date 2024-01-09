@@ -1,0 +1,6 @@
+ERROR:root:An error occurred in get_advertisement_by_filter_id_and_value: AdvertisementQueryRepository.get_advertisement_by_filter_id_and_value() takes 3 positional arguments but 4 were given
+ERROR:root:An error occurred in get_advertisement_by_filter_id_and_value: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [03/Jan/2024 23:22:25] "GET /api/advertisement/quary/get_advertisement_by_filter?filter_id=1&value=Some%20value HTTP/1.1" 200 -
+ERROR:root:An error occurred in get_advertisement_by_filter_id_and_value: AdvertisementQueryRepository.get_advertisement_by_filter_id_and_value() takes 3 positional arguments but 4 were given
+ERROR:root:An error occurred in get_advertisement_by_filter_id_and_value: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [03/Jan/2024 23:23:18] "GET /api/advertisement/quary/get_advertisement_by_filter?filter_id=1&value=Some%20value HTTP/1.1" 200 -

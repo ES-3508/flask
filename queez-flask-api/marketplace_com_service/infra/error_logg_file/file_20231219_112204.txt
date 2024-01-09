@@ -1,0 +1,1 @@
+ERROR:root:An error occurred in create_advertisement: Mapper 'Mapper[AdvertisementDetails_Orm(advertisement_details)]' has no property 'filters'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.

@@ -1,0 +1,18 @@
+ERROR:root:An error occurred in get_advertisement_by_id: 'ResponseObject' object has no attribute 'header_id'
+INFO:werkzeug:127.0.0.1 - - [15/Dec/2023 11:43:13] "GET /api/advertisement/quary/get_advertisement_by_id/1 HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT advertisement_header.header_id AS advertisement_header_header_id, advertisement_header.publisher_id AS advertisement_header_publisher_id, advertisement_header.time_period AS advertisement_header_time_period, advertisement_header.is_active AS advertisement_header_is_active, advertisement_header.coordinates AS advertisement_header_coordinates, advertisement_header.wf_state AS advertisement_header_wf_state, advertisement_header.date AS advertisement_header_date, advertisement_header.user_id AS advertisement_header_user_id, advertisement_header.package_id AS advertisement_header_package_id 
+FROM advertisement_header 
+WHERE advertisement_header.header_id = %s 
+ LIMIT %s
+INFO:sqlalchemy.engine.Engine:[cached since 24.23s ago] (1, 1)
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+ERROR:root:An error occurred in get_advertisement_by_id: 'ResponseObject' object has no attribute 'header_id'
+INFO:werkzeug:127.0.0.1 - - [15/Dec/2023 11:44:57] "GET /api/advertisement/quary/get_advertisement_by_id/1 HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT advertisement_header.header_id AS advertisement_header_header_id, advertisement_header.publisher_id AS advertisement_header_publisher_id, advertisement_header.time_period AS advertisement_header_time_period, advertisement_header.is_active AS advertisement_header_is_active, advertisement_header.coordinates AS advertisement_header_coordinates, advertisement_header.wf_state AS advertisement_header_wf_state, advertisement_header.date AS advertisement_header_date, advertisement_header.user_id AS advertisement_header_user_id, advertisement_header.package_id AS advertisement_header_package_id 
+FROM advertisement_header 
+WHERE advertisement_header.header_id = %s 
+ LIMIT %s
+INFO:sqlalchemy.engine.Engine:[cached since 190.8s ago] (1, 1)
+INFO:sqlalchemy.engine.Engine:ROLLBACK

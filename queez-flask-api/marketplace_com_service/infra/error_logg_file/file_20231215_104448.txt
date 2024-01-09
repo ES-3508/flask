@@ -1,0 +1,29 @@
+ERROR:root:An error occurred in get_advertisement_by_id: 'AdvertisementHeader_Orm' object has no attribute 'id'
+INFO:werkzeug:127.0.0.1 - - [15/Dec/2023 10:44:48] "GET /api/advertisement/quary/get_advertisement_by_id/1 HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT advertisement_header.header_id AS advertisement_header_header_id, advertisement_header.publisher_id AS advertisement_header_publisher_id, advertisement_header.time_period AS advertisement_header_time_period, advertisement_header.is_active AS advertisement_header_is_active, advertisement_header.coordinates AS advertisement_header_coordinates, advertisement_header.wf_state AS advertisement_header_wf_state, advertisement_header.date AS advertisement_header_date, advertisement_header.user_id AS advertisement_header_user_id, advertisement_header.package_id AS advertisement_header_package_id 
+FROM advertisement_header 
+WHERE advertisement_header.header_id = %s 
+ LIMIT %s
+INFO:sqlalchemy.engine.Engine:[cached since 172.6s ago] (1, 1)
+INFO:sqlalchemy.engine.Engine:SELECT advertisement_details.advertisement_details_id AS advertisement_details_advertisement_details_id, advertisement_details.add_id AS advertisement_details_add_id, advertisement_details.filter_id AS advertisement_details_filter_id, advertisement_details.value AS advertisement_details_value, advertisement_details.header_id AS advertisement_details_header_id 
+FROM advertisement_details 
+WHERE %s = advertisement_details.header_id
+INFO:sqlalchemy.engine.Engine:[cached since 17.89s ago] (1,)
+INFO:sqlalchemy.engine.Engine:SELECT advertisement_package.package_id AS advertisement_package_package_id, advertisement_package.description AS advertisement_package_description, advertisement_package.number_of_add AS advertisement_package_number_of_add, advertisement_package.num_days AS advertisement_package_num_days, advertisement_package.is_active AS advertisement_package_is_active, advertisement_package.price AS advertisement_package_price 
+FROM advertisement_package 
+WHERE advertisement_package.package_id = %s
+INFO:sqlalchemy.engine.Engine:[cached since 17.85s ago] (1,)
+INFO:sqlalchemy.engine.Engine:SELECT customer.customer_id AS customer_customer_id, customer.name AS customer_name, customer.sys_user_id AS customer_sys_user_id 
+FROM customer 
+WHERE customer.customer_id = %s
+INFO:sqlalchemy.engine.Engine:[cached since 17.85s ago] (1,)
+INFO:sqlalchemy.engine.Engine:SELECT image_details.image_details_id AS image_details_image_details_id, image_details.image_url AS image_details_image_url, image_details.transec_ref_id AS image_details_transec_ref_id 
+FROM image_details 
+WHERE %s = image_details.transec_ref_id
+INFO:sqlalchemy.engine.Engine:[cached since 17.85s ago] (1,)
+INFO:sqlalchemy.engine.Engine:SELECT workflow_history.workflow_history_id AS workflow_history_workflow_history_id, workflow_history.transec_ref_id AS workflow_history_transec_ref_id, workflow_history.state_id AS workflow_history_state_id, workflow_history.state AS workflow_history_state, workflow_history.transection_type AS workflow_history_transection_type 
+FROM workflow_history 
+WHERE %s = workflow_history.transec_ref_id
+INFO:sqlalchemy.engine.Engine:[cached since 17.84s ago] (1,)
+INFO:sqlalchemy.engine.Engine:ROLLBACK

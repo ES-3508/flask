@@ -1,0 +1,27 @@
+ERROR:root:An error occurred in get_all_advertisements: 'InstrumentedList' object has no attribute 'add_id'
+ERROR:root:An error occurred in get_all_advertisements: 'bool' object is not iterable
+ERROR:root:An error occurred in get_all_advertisements: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [29/Nov/2023 10:05:11] "GET /api/advertisement/quary/get_all_advertisements HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.Engine:SELECT header_table.id AS header_table_id, header_table.publisher_id AS header_table_publisher_id, header_table.time_period AS header_table_time_period, header_table.is_active AS header_table_is_active, header_table.x_coordinate AS header_table_x_coordinate, header_table.y_coordinate AS header_table_y_coordinate 
+FROM header_table
+INFO:sqlalchemy.engine.Engine:[cached since 40.06s ago] ()
+INFO:sqlalchemy.engine.Engine:SELECT detail_table.id AS detail_table_id, detail_table.add_id AS detail_table_add_id, detail_table.filter_id AS detail_table_filter_id, detail_table.filtercategory_id AS detail_table_filtercategory_id, detail_table.value AS detail_table_value 
+FROM detail_table 
+WHERE %s = detail_table.add_id
+INFO:sqlalchemy.engine.Engine:[cached since 42.22s ago] (1,)
+INFO:sqlalchemy.engine.Engine:SELECT detail_table.id AS detail_table_id, detail_table.add_id AS detail_table_add_id, detail_table.filter_id AS detail_table_filter_id, detail_table.filtercategory_id AS detail_table_filtercategory_id, detail_table.value AS detail_table_value 
+FROM detail_table 
+WHERE %s = detail_table.add_id
+INFO:sqlalchemy.engine.Engine:[cached since 62.25s ago] (2,)
+INFO:sqlalchemy.engine.Engine:SELECT image_table.id AS image_table_id, image_table.image_url AS image_table_image_url, image_table.thumbnail_photo AS image_table_thumbnail_photo 
+FROM image_table 
+WHERE %s = image_table.id
+INFO:sqlalchemy.engine.Engine:[generated in 0.00094s] (2,)
+INFO:sqlalchemy.engine.Engine:SELECT filters.id AS filters_id, filters.name AS filters_name, filters.description AS filters_description, filters.ref_id AS filters_ref_id, filters.type AS filters_type, filters.is_active AS filters_is_active, filters.sql_statement AS filters_sql_statement 
+FROM filters 
+WHERE filters.id = %s
+INFO:sqlalchemy.engine.Engine:[generated in 0.00109s] (1,)
+INFO:sqlalchemy.engine.Engine:SELECT hierarchical_data.id AS hierarchical_data_id, hierarchical_data.name AS hierarchical_data_name, hierarchical_data.level AS hierarchical_data_level, hierarchical_data.parent AS hierarchical_data_parent, hierarchical_data.is_active AS hierarchical_data_is_active, hierarchical_data.category AS hierarchical_data_category 
+FROM hierarchical_data 
+WHERE hierarchical_data.id = %s
+INFO:sqlalchemy.engine.Engine:[generated in 0.00153s] (1,)

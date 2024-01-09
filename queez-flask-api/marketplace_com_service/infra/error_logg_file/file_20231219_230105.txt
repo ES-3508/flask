@@ -1,0 +1,2 @@
+ERROR:root:An error occurred in create_advertisement: type object 'filter' has no attribute 'name'
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 23:01:06] "POST /api/advertisement/command/create_advertisement HTTP/1.1" 200 -

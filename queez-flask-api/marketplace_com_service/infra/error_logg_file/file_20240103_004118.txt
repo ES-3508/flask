@@ -1,0 +1,3 @@
+ERROR:root:An error occurred in get_advertisement_by_id: Mapper 'Mapper[FilterOrm(filters)]' has no property 'saved_filters'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+ERROR:root:An error occurred in get_advertisement_by_id: cannot access local variable 'advertisement_response_object' where it is not associated with a value
+INFO:werkzeug:127.0.0.1 - - [03/Jan/2024 00:41:18] "GET /api/advertisement/quary/get_advertisement_by_id/1 HTTP/1.1" 200 -

@@ -1,0 +1,4 @@
+ERROR:root:An error occurred in save_pinned_item: 'int' object has no attribute 'value'
+ERROR:root:An error occurred in save_pinned_item: 'int' object has no attribute 'value'
+INFO:werkzeug:127.0.0.1 - - [06/Jan/2024 08:36:38] "POST /api/customerportal/command/save_pinned_item HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jan/2024 08:36:38] "POST /api/customerportal/command/save_pinned_item HTTP/1.1" 200 -

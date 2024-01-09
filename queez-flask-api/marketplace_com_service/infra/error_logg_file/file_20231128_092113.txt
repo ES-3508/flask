@@ -1,0 +1,56 @@
+ERROR:root:An error occurred in get_all_data: 'Table' object has no attribute 'HeaderTable'
+ERROR:server:Exception on /api/landing/quary/get_all_hierarchical_data [GET]
+Traceback (most recent call last):
+  File "d:\QUEE\QueezFlask\queez-flask-api -withblueprints\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api -withblueprints\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api -withblueprints\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api -withblueprints\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api -withblueprints\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api -withblueprints\marketplace_com_service\interfaces\features\landing\landing_quary_routes.py", line 24, in get_all_hierarchical_data
+    response_object = service.get_all_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api -withblueprints\marketplace_com_service\application\features\landing\quarry\hierarchical_data_query_service.py", line 12, in get_all_data
+    hierarchicaldatas = self.hierarchicaldata_query_service.get_all_data()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api -withblueprints\marketplace_com_service\application\features\landing\quarry\hierarchical_data_query_service.py", line 15, in get_all_data
+    for hierarchical_data in hierarchicaldatas:
+TypeError: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [28/Nov/2023 09:21:13] "[35m[1mGET /api/landing/quary/get_all_hierarchical_data HTTP/1.1[0m" 500 -
+ERROR:root:An error occurred in get_all_data: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[HeaderTable(header_table)]'. Original exception was: 'Table' object has no attribute 'HeaderTable'
+ERROR:server:Exception on /api/landing/quary/get_all_hierarchical_data [GET]
+Traceback (most recent call last):
+  File "d:\QUEE\QueezFlask\queez-flask-api -withblueprints\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api -withblueprints\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api -withblueprints\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api -withblueprints\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api -withblueprints\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api -withblueprints\marketplace_com_service\interfaces\features\landing\landing_quary_routes.py", line 24, in get_all_hierarchical_data
+    response_object = service.get_all_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api -withblueprints\marketplace_com_service\application\features\landing\quarry\hierarchical_data_query_service.py", line 12, in get_all_data
+    hierarchicaldatas = self.hierarchicaldata_query_service.get_all_data()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\queez-flask-api -withblueprints\marketplace_com_service\application\features\landing\quarry\hierarchical_data_query_service.py", line 15, in get_all_data
+    for hierarchical_data in hierarchicaldatas:
+TypeError: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [28/Nov/2023 09:22:47] "[35m[1mGET /api/landing/quary/get_all_hierarchical_data HTTP/1.1[0m" 500 -

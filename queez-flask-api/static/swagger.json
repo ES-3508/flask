@@ -1,0 +1,649 @@
+{   
+    "openapi": "3.0.0",
+
+    "info": {
+            "description": "Landing Quarry API",
+            "version": "1.0.0",
+            "title": "Landing Quarry Service"
+    },    
+
+    "servers": [
+        {
+            
+            "url": "http://127.0.0.1:5000"
+        },
+        {
+            
+            "url": "http://127.0.0.1:5000/api/auth/quary"
+        },
+        {
+            "url": "http://127.0.0.1:5000/api/auth/command"
+        },
+        {
+            "url": "http://127.0.0.1:5000/api/landing/quary"
+        },
+        {
+            "url": "http://127.0.0.1:5000/api/landing/command"
+        },
+        {
+            "url": "http://127.0.0.1:5000/api/advertisement/quary"
+        },
+        {
+            "url": "http://127.0.0.1:5000/api/advertisement/command"
+        }
+    ],
+    
+    "paths": {
+        "/api/landing/quary/get_all_hierarchical_data": {
+            "get": {
+              "tags": ["Landing Quarry"],
+              "summary": "Get all hierarchical data",
+              "security": [
+                {
+                  "BearerAuth": []
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "Unauthorized",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          
+          
+
+        
+
+        "/api/landing/quary/get_all_filter_data": {
+            "get": {
+                "tags":["Landing Quarry"],
+                "summary": "Get all filter data",
+                "responses": {
+                    "200":{
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema":{
+                                    "type": "object"
+                                }         
+                            }
+                        }
+                    },
+                    
+                    "401":{
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema":{
+                                    "type": "object"
+                                }                                   
+                            }                        
+                        }                    
+                    }                   
+                }
+            }
+        },
+
+        "/api/landing/quary/get_all": {
+            "get": {
+                "tags":["Landing Quarry"],
+                "summary": "Get all filter and heirarchical data",
+                "responses": {
+                    "200":{
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema":{
+                                    "type": "object"
+                                }         
+                            }
+                        }
+                    },
+                    
+                    "401":{
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema":{
+                                    "type": "object"
+                                }                                   
+                            }                        
+                        }                    
+                    }                   
+                }
+            }
+        },
+
+        "/api/landing/quary/get_element_by_id/1": {
+            "get": {
+                "tags":["Landing Quarry"],
+                "summary": "Get element by ID in in hierarchicaldata",
+              
+                    
+                "responses": {
+                    "200":{
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema":{
+                                    "type": "object"
+                                }         
+                            }
+                        }
+                    },
+                    
+                    "401":{
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema":{
+                                    "type": "object"
+                                }                                   
+                            }                        
+                        }                    
+                    }                   
+                }
+            }
+        },
+
+        
+
+        "/api/auth/quary/login": {
+            "post": {
+                "tags": ["Authentication"],
+                "summary": "User login",
+                "description": "Authenticate a user and return a token.",
+                "requestBody": {
+                    "description": "User credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "username": {
+                                        "type": "string"
+                                    },
+                                    "password": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "token": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
+        "/api/advertisement/command/create_advertisement": {
+            "post": {
+                "tags": ["Advertisement"],
+                "summary": "Create Advertisement",
+                "requestBody": {
+                    "description": "Advertisement data",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "header": {
+                                        "type": "object"  
+                                    },
+                                    "package": {
+                                        "type": "object"
+                                    },
+                                    "details": {
+                                        "type": "object"
+                                    },
+                                    "image": {
+                                        "type": "object"
+                                    },
+                                    "history": {
+                                        "type": "object"
+                                    },
+                                    "customer": {
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object" 
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/advertisement/command/update_advertisement/{id}": {
+            "put": {
+                "tags": ["Advertisement"],
+                "summary": "Update Advertisement",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "description": "Updated Advertisement data",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object"  
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"  
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/advertisement/command/delete_advertisement/{id}": {
+            "delete": {
+                "tags": ["Advertisement"],
+                "summary": "Delete Advertisement",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object" 
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
+        "/api/advertisement/quary/get_advertisement_by_id/{advertisement_id}": {
+            "get": {
+                "tags": ["Advertisement"],
+                "summary": "Get Advertisement by ID",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "advertisement_id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"  
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/advertisement/quary/get_advertisement_by_filter": {
+            "get": {
+                "tags": ["Advertisement"],
+                "summary": "Get Advertisement by Filter",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "filter_id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "in": "query",
+                        "name": "value",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "in": "query",
+                        "name": "customer_id",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object" 
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/customerportal/command/save_pinned_item": {
+            "post": {
+                "tags": ["CustomerPortal"],
+                "summary": "Save Pinned Item",
+                "requestBody": {
+                    "description": "Pinned Item data",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "customer_id": {
+                                        "type": "integer"
+                                    },
+                                    "add_id": {
+                                        "type": "integer"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"  
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/customerportal/command/save_saved_filter": {
+            "post": {
+                "tags": ["CustomerPortal"],
+                "summary": "Save Saved Filter",
+                "requestBody": {
+                    "description": "Saved Filter data",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "customer_id": {
+                                        "type": "integer"
+                                    },
+                                    "filter_id": {
+                                        "type": "integer"
+                                    },
+                                    "value": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"  
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/customerportal/quary/get_pinned_items": {
+            "get": {
+                "tags": ["CustomerPortal"],
+                "summary": "Get Pinned Items",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "customer_id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object" 
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/customerportal/quary/get_saved_filters": {
+            "get": {
+                "tags": ["CustomerPortal"],
+                "summary": "Get Saved Filters",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "customer_id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object" 
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+   
+
+
+
+

@@ -1,0 +1,4 @@
+ERROR:root:An error occurred in get_all_advertisements: 'Table' object has no attribute 'HeaderTable'
+ERROR:root:An error occurred in get_all_advertisements: 'bool' object is not iterable
+ERROR:root:An error occurred in get_all_advertisements: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [28/Nov/2023 08:52:32] "GET /api/advertisement/quary/get_all_advertisements HTTP/1.1" 200 -

@@ -1,0 +1,2 @@
+ERROR:root:An error occurred in get_advertisement_by_id: Mapper 'Mapper[AdvertisementHeader_Orm(advertisement_header)]' has no property 'advertisement_details'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+INFO:werkzeug:127.0.0.1 - - [15/Dec/2023 10:36:34] "GET /api/advertisement/quary/get_advertisement_by_id/1 HTTP/1.1" 200 -

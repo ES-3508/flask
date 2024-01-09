@@ -12,7 +12,18 @@ from ..infrastructure.command.hierarchicaldata_command_repository import Hierarc
 
 from ..application.features.landing.quarry.filterandhierarchicaldata_query_service import FilterandHierarchicaldataQueryService
 
+from ..infrastructure.command.advertisement_command_repository import AdvertisementCommandRepository
+from ..infrastructure.quary.advertisement_query_repository import AdvertisementQueryRepository
+from ..application.features.advertisement.command.advertisement_command_service import AdvertisementCommandService
+from ..application.features.advertisement.quarry.advertisement_query_service import AdvertisementQueryService
+
+from ..infrastructure.command.customerportal_command_repository import CustomerportalCommandRepository
+from ..infrastructure.quary.customerportal_query_repository import CustomerportalQueryRepository
+from ..application.features.costomerportal.command.customerportal_command_service import CustomerportalCommandService
+from ..application.features.costomerportal.quarry.customerportal_query_service import CustomerportalQueryService
 # Create instances of the required dependencies
+
+
 filter_query_repository = FilterQueryRepository()
 hierarchicaldata_query_repository = HierarchicalDataQueryRepository()
 
@@ -22,10 +33,20 @@ hierarchicalData_command_repository = HierarchicalDataCommandRepository()
 filter_Command_Service = FilterCommandService(filter_command_repository)
 hierarchicalData_command_Service = HierarchicalDataCommandService(hierarchicalData_command_repository)
 
+advertisement_query_repository = AdvertisementQueryRepository()
+advertisement_command_repository = AdvertisementCommandRepository()
+
+
 filter_query_service = FilterQueryService(filter_query_repository)
 hierarchicaldata_query_service = HierarchicalDataQueryService(hierarchicaldata_query_repository)
 filterandhierarchicaldata_query_service = FilterandHierarchicaldataQueryService(filter_query_repository,hierarchicaldata_query_repository)
 
 
+advertisement_command_service = AdvertisementCommandService(advertisement_command_repository)
+advertisement_query_service = AdvertisementQueryService(advertisement_query_repository)
 
+customerportal_command_repository = CustomerportalCommandRepository()
+customerportal_query_repository = CustomerportalQueryRepository()
 
+customerportal_query_service = CustomerportalQueryService(customerportal_query_repository)
+customerportal_command_service = CustomerportalCommandService(customerportal_command_repository)

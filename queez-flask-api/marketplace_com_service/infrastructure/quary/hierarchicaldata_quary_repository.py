@@ -31,4 +31,5 @@ class HierarchicalDataQueryRepository(IHierarchicalDataQueryRepository):
         data_entities = session.query(HierarchicalDataOrm).all()
         session.close()
 
-        return [HierarchicalData(data_entity.id, data_entity.name, data_entity.level, data_entity.parent,data_entity.is_active,data_entity.category) for data_entity in data_entities]            
+        return [HierarchicalData(data_entity.id, data_entity.name, data_entity.level, data_entity.parent,data_entity.is_active,data_entity.category) for data_entity in data_entities]    
+            

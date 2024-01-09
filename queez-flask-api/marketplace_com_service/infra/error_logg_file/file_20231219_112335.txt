@@ -1,0 +1,2 @@
+ERROR:root:An error occurred in save_collection: MongoDRunner.save_collection() takes 2 positional arguments but 3 were given
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:23:38] "POST /api/advertisement/command/create_advertisement HTTP/1.1" 200 -

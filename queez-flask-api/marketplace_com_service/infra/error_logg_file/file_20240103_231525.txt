@@ -1,0 +1,36 @@
+ERROR:root:An error occurred in get_advertisement_by_filter_id_and_value: (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`abcc`.`customer_saved_filters`, CONSTRAINT `customer_saved_filters_ibfk_2` FOREIGN KEY (`filter_id`) REFERENCES `filters` (`id`))')
+[SQL: INSERT INTO customer_saved_filters (customer_id, filter_id, value) VALUES (%s, %s, %s)]
+[parameters: ('2', 2, 'some value')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+ERROR:root:An error occurred in get_advertisement_by_filter_id_and_value: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [03/Jan/2024 23:15:25] "GET /api/advertisement/quary/get_advertisement_by_filter?filter_id=2&value=some%20value&customer_id=2 HTTP/1.1" 200 -
+ERROR:root:An error occurred in get_advertisement_by_filter_id_and_value: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`abcc`.`customer_saved_filters`, CONSTRAINT `customer_saved_filters_ibfk_2` FOREIGN KEY (`filter_id`) REFERENCES `filters` (`id`))')
+[SQL: INSERT INTO customer_saved_filters (customer_id, filter_id, value) VALUES (%s, %s, %s)]
+[parameters: ('2', 2, 'some value')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+ERROR:root:An error occurred in get_advertisement_by_filter_id_and_value: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [03/Jan/2024 23:16:11] "GET /api/advertisement/quary/get_advertisement_by_filter?filter_id=1&value=Some%20value&customer_id=2 HTTP/1.1" 200 -
+ERROR:root:An error occurred in get_advertisement_by_filter_id_and_value: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`abcc`.`customer_saved_filters`, CONSTRAINT `customer_saved_filters_ibfk_2` FOREIGN KEY (`filter_id`) REFERENCES `filters` (`id`))')
+[SQL: INSERT INTO customer_saved_filters (customer_id, filter_id, value) VALUES (%s, %s, %s)]
+[parameters: ('2', 2, 'some value')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+ERROR:root:An error occurred in get_advertisement_by_filter_id_and_value: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [03/Jan/2024 23:16:23] "GET /api/advertisement/quary/get_advertisement_by_filter?filter_id=1&value=Some%20value&customer_id=1 HTTP/1.1" 200 -
+ERROR:root:An error occurred in get_advertisement_by_filter_id_and_value: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`abcc`.`customer_saved_filters`, CONSTRAINT `customer_saved_filters_ibfk_2` FOREIGN KEY (`filter_id`) REFERENCES `filters` (`id`))')
+[SQL: INSERT INTO customer_saved_filters (customer_id, filter_id, value) VALUES (%s, %s, %s)]
+[parameters: ('2', 2, 'some value')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+ERROR:root:An error occurred in get_advertisement_by_filter_id_and_value: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [03/Jan/2024 23:17:35] "GET /api/advertisement/quary/get_advertisement_by_filter?filter_id=1&value=Some%20value&customer_id=2 HTTP/1.1" 200 -
+ERROR:root:An error occurred in get_advertisement_by_filter_id_and_value: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`abcc`.`customer_saved_filters`, CONSTRAINT `customer_saved_filters_ibfk_2` FOREIGN KEY (`filter_id`) REFERENCES `filters` (`id`))')
+[SQL: INSERT INTO customer_saved_filters (customer_id, filter_id, value) VALUES (%s, %s, %s)]
+[parameters: ('2', 2, 'some value')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+ERROR:root:An error occurred in get_advertisement_by_filter_id_and_value: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [03/Jan/2024 23:19:47] "GET /api/advertisement/quary/get_advertisement_by_filter?filter_id=1&value=Some%20value HTTP/1.1" 200 -
+ERROR:root:An error occurred in get_advertisement_by_filter_id_and_value: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`abcc`.`customer_saved_filters`, CONSTRAINT `customer_saved_filters_ibfk_2` FOREIGN KEY (`filter_id`) REFERENCES `filters` (`id`))')
+[SQL: INSERT INTO customer_saved_filters (customer_id, filter_id, value) VALUES (%s, %s, %s)]
+[parameters: ('2', 2, 'some value')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+ERROR:root:An error occurred in get_advertisement_by_filter_id_and_value: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [03/Jan/2024 23:21:26] "GET /api/advertisement/quary/get_advertisement_by_filter?filter_id=1&value=Some%20value HTTP/1.1" 200 -

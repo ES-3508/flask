@@ -1,0 +1,2 @@
+ERROR:root:An error occurred in get_advertisement_by_id: Could not determine join condition between parent/child tables on relationship AdvertisementHeader_Orm.customer - there are multiple foreign key paths linking the tables.  Specify the 'foreign_keys' argument, providing a list of those columns which should be counted as containing a foreign key reference to the parent table.
+INFO:werkzeug:127.0.0.1 - - [15/Dec/2023 10:20:54] "GET /api/advertisement/quary/get_advertisement_by_id/1 HTTP/1.1" 200 -

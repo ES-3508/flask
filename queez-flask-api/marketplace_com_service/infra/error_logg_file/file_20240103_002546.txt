@@ -1,0 +1,6 @@
+ERROR:root:An error occurred in get_advertisement_by_id: 'Table' object has no attribute 'customer_id'
+ERROR:root:An error occurred in get_advertisement_by_id: cannot access local variable 'advertisement_response_object' where it is not associated with a value
+INFO:werkzeug:127.0.0.1 - - [03/Jan/2024 00:25:46] "GET /api/advertisement/quary/get_advertisement_by_id/1 HTTP/1.1" 200 -
+ERROR:root:An error occurred in get_advertisement_by_id: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Customer_Orm(customer)]'. Original exception was: 'Table' object has no attribute 'customer_id'
+ERROR:root:An error occurred in get_advertisement_by_id: cannot access local variable 'advertisement_response_object' where it is not associated with a value
+INFO:werkzeug:127.0.0.1 - - [03/Jan/2024 00:27:33] "GET /api/advertisement/quary/get_advertisement_by_id/1 HTTP/1.1" 200 -
