@@ -15,5 +15,5 @@ class Customer_Orm(Base):
     pinned_items = relationship("CustomerPinnedItems", back_populates="customer",foreign_keys='CustomerPinnedItems.customer_id')
     customer = relationship("CustomerSavedFilters", back_populates="customer_s")
     
-    sent_chats = relationship("ChatOrm", back_populates="sender")
-    received_chats = relationship("ChatOrm", back_populates="receiver")
+    # sent_chats = relationship("ChatOrm", back_populates="sender")
+    # received_chats = relationship("ChatOrm", back_populates="receiver")

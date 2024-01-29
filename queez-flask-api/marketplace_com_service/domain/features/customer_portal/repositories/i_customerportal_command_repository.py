@@ -15,10 +15,10 @@ class ICustomerportalCommandRepository(ABC):
         """Save a saved filter."""
         pass
     
-    @abstractmethod
-    def save_chat_message(self, message: Chat) -> None:
-        """Save a chat message."""
-        pass
+    # @abstractmethod
+    # def save_chat_message(self, message: Chat) -> None:
+    #     """Save a chat message."""
+    #     pass
 
     
 

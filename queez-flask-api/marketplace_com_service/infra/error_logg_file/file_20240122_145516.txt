@@ -1,0 +1,84 @@
+ERROR:root:An error occurred in get_all_data: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Customer_Orm(customer)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Customer_Orm.sent_chats - there are multiple foreign key paths linking the tables.  Specify the 'foreign_keys' argument, providing a list of those columns which should be counted as containing a foreign key reference to the parent table.
+ERROR:server:Exception on /api/landing/quary/get_all_hierarchical_data [GET]
+Traceback (most recent call last):
+  File "D:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\marketplace_com_service\interfaces\features\landing\landing_quary_routes.py", line 24, in get_all_hierarchical_data
+    response_object = service.get_all_data()
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\marketplace_com_service\application\features\landing\quarry\hierarchical_data_query_service.py", line 12, in get_all_data
+    hierarchicaldatas = self.hierarchicaldata_query_service.get_all_data()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\marketplace_com_service\application\features\landing\quarry\hierarchical_data_query_service.py", line 15, in get_all_data
+    for hierarchical_data in hierarchicaldatas:
+TypeError: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2024 14:55:16] "[35m[1mGET /api/landing/quary/get_all_hierarchical_data HTTP/1.1[0m" 500 -
+ERROR:root:An error occurred in get_advertisement_by_id: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Customer_Orm(customer)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Customer_Orm.sent_chats - there are multiple foreign key paths linking the tables.  Specify the 'foreign_keys' argument, providing a list of those columns which should be counted as containing a foreign key reference to the parent table.
+ERROR:root:An error occurred in get_advertisement_by_id: cannot access local variable 'advertisement_response_object' where it is not associated with a value
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2024 14:56:27] "GET /api/advertisement/quary/get_advertisement_by_id/2 HTTP/1.1" 200 -
+ERROR:server:Exception on /api/customerportal/quary/get_saved_filters [GET]
+Traceback (most recent call last):
+  File "D:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\marketplace_com_service\interfaces\features\customer_portal\customer_portal_quary_routes.py", line 39, in get_saved_filters
+    response_object = customerportal_query_service.get_saved_filters_by_customer_id(customer_id)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\marketplace_com_service\application\features\costomerportal\quarry\customerportal_query_service.py", line 28, in get_saved_filters_by_customer_id
+    saved_filters = self.customerportal_query_repository.get_saved_filters_by_customer_id(customer_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\marketplace_com_service\infrastructure\quary\customerportal_query_repository.py", line 27, in get_saved_filters_by_customer_id
+    session.query(CustomerSavedFilters)
+  File "D:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2814, in query
+    return self._query_cls(entities, self, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 273, in __init__
+    self._set_entities(entities)
+  File "D:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 282, in _set_entities
+    self._raw_columns = [
+                        ^
+  File "D:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 283, in <listcomp>
+    coercions.expect(
+  File "D:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\venv\Lib\site-packages\sqlalchemy\sql\coercions.py", line 406, in expect
+    insp._post_inspect
+  File "D:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 1256, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+                                           ^^^^^^^^^^^^^^
+  File "D:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2707, in _post_inspect
+    self._check_configure()
+  File "D:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2386, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "D:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4198, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "D:\QUEE\QueezFlask\bit_buc\marketplace-api\queez-flask-api\venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4235, in _do_configure_registries
+    raise e
+sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Customer_Orm(customer)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Customer_Orm.sent_chats - there are multiple foreign key paths linking the tables.  Specify the 'foreign_keys' argument, providing a list of those columns which should be counted as containing a foreign key reference to the parent table.
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2024 14:56:40] "[35m[1mGET /api/customerportal/quary/get_saved_filters?customer_id=2 HTTP/1.1[0m" 500 -
+ERROR:root:An error occurred in get_advertisement_by_filter_id_and_value: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Customer_Orm(customer)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Customer_Orm.sent_chats - there are multiple foreign key paths linking the tables.  Specify the 'foreign_keys' argument, providing a list of those columns which should be counted as containing a foreign key reference to the parent table.
+ERROR:root:An error occurred in get_advertisement_by_filter_id_and_value: 'bool' object is not iterable
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2024 14:56:45] "GET /api/advertisement/quary/get_advertisement_by_filter?filter_id=1&value=Some%20value HTTP/1.1" 200 -

@@ -14,7 +14,7 @@ from .orm_mapper.image_mapper import Base as ImageDetails_Orm
 from .orm_mapper.workflow_mapper import Base as WorkflowHistory_Orm
 from .orm_mapper.pinned_items_mapper import Base
 from .orm_mapper.saved_filters_mapper import Base
-from .orm_mapper.chat_mapper import Base
+# from .orm_mapper.chat_mapper import Base
 
 # from .db_settings.mysql_database_orm import Base
 from .db_settings.mysql_database_orm import  engine

@@ -8,7 +8,7 @@ from ..orm_mapper.saved_filters_mapper import CustomerSavedFilters
 from ...domain.features.customer_portal.aggregates.savedfilters import SavedFilters
 from ..db_settings.mysql_database_orm import db_context_orm, Session
 from ...domain.features.customer_portal.aggregates.chat import Chat
-from ..orm_mapper.chat_mapper import ChatOrm
+# from ..orm_mapper.chat_mapper import ChatOrm
 
 
 class CustomerportalCommandRepository(ICustomerportalCommandRepository):
@@ -35,15 +35,15 @@ class CustomerportalCommandRepository(ICustomerportalCommandRepository):
         session.add(customer_saved_filter)
         session.commit()
         
-    def save_chat_message(self, chat: Chat) -> None:
-        session = Session()
-        chat_message = ChatOrm(
-            sender_id=chat.sender_id,
-            receiver_id=chat.receiver_id,
-            message=chat.message
-        )
-        session.add(chat_message)
-        session.commit()
+    # def save_chat_message(self, chat: Chat) -> None:
+    #     session = Session()
+    #     chat_message = ChatOrm(
+    #         sender_id=chat.sender_id,
+    #         receiver_id=chat.receiver_id,
+    #         message=chat.message
+    #     )
+    #     session.add(chat_message)
+    #     session.commit()
       
 
     # def save_customer_details(self, customer_details: CustomerDetails) -> None:

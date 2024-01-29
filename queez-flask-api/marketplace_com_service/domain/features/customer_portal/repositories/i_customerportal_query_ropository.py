@@ -16,10 +16,10 @@ class ICustomerportalQueryRepository(ABC):
         """Get saved filters by customer ID."""
         pass
 
-    @abstractmethod
-    def retrieve_chat_messages(self, sender_id: int, receiver_id: int) -> List[Chat]:
-        """Retrieve chat messages between sender and receiver."""
-        pass
+    # @abstractmethod
+    # def retrieve_chat_messages(self, sender_id: int, receiver_id: int) -> List[Chat]:
+    #     """Retrieve chat messages between sender and receiver."""
+    #     pass
     # @abstractmethod
     # def get_customer_details_by_id(self, customer_id: int) -> Optional[CustomerDetails]:
     #     """Get customer details by ID."""
