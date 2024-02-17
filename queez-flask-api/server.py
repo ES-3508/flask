@@ -66,6 +66,6 @@ app.register_blueprint(customerportal_query_routes, url_prefix='/api/customerpor
 app.register_blueprint(customerportal_command_routes, url_prefix='/api/customerportal/command')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
     
     
