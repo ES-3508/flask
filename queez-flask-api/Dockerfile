@@ -7,7 +7,7 @@ WORKDIR /app
 
 RUN apt-get update && apt-get install -y \
     pkg-config \
-    libmysqlclient-dev \
+    libmariadb-dev \
     build-essential \
     cython
 
@@ -21,8 +21,8 @@ RUN pip install --upgrade pip setuptools
 COPY . /app/
 
 # Create and activate a virtual environment
-RUN python -m venv venv
-RUN source venv/bin/activate
+# RUN python -m venv venv
+# RUN source venv/bin/activate
 
 # Install Cython explicitly
 RUN pip install cython
